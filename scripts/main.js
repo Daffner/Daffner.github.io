@@ -1,3 +1,5 @@
 const pageHeading = document.querySelector('h1');
 pageHeading.textContent = "Hello world 2";
-Set-Cookie: testCookie = hello\sworld;
+document.cookie = "testCookie=test";
+const body = document.querySelector('body');
+body.textContent = document.cookie;
