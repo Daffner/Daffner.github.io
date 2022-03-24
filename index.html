@@ -7,14 +7,21 @@ img {
 }
 </style>
 <body>
+<!-- old code
 <img src="assets/ConcordTour_3.png" alt = "i failed :(" usemap = "#mapOne" id = "img1"></img>
 <map name="mapOne" id="mapOne">
   <area shape = "circle" coords="75,75,50" alt="test" href="assets/testImg.png">
   <area shape = "circle" coords="75,175,50" alt="test" href="points/Early1.html" id="p1">
 
 </map>
-
-
+replacement code below
+-->
+<div style="display:none;">
+	<img id="img1"src="assets/ConcordTour_3.png"alt="image">
+</div>
+<canvas id="canvas">
+</canvas>
+<!--will add script for canvas-->	
 <p style="color:green">Click the button to get your coordinates.</p>
 
 <button onclick="getLocation()">Try It</button>
