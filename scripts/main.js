@@ -10,7 +10,7 @@ let red = [];
 let green = [];
 let blue = [];
 let alpha = [];
-for (int i = 0; i < data.length; i+=4){
+for (let i = 0; i < data.length; i+=4){
   red[i/4] = data[i];
   green[i/4] = data[i+1];
   blue[i/4] = data[i+2];
