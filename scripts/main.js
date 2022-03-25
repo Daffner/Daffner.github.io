@@ -7,15 +7,18 @@ let h = can.clientHeight;
 var con = can.getContext("2d");
 let imgData = con.getImageData(0,0,can.width,can.height);
 let data = imgData.data;
-let red = [];
-let green = [];
-let blue = [];
-let alpha = [];
+let red = 0;
+let green = 0;
+let blue = 0;
+let coords = [][]
+let count = 0;
 for (let i = 0; i < data.length; i+=4){
-  red[i/4] = data[i];
-  green[i/4] = data[i+1];
-  blue[i/4] = data[i+2];
-  alpha[i/4] = data[i+3];
-  
+  red = data[i];
+  green = data[i+1];
+  blue = data[i+2];
+  if (red === green && green === blue && red === 255) {
+    //this is a clickable area
+    coords[count] = [(i/4)%can.width,(i/4)/can.width]; 
+  }
 }
 
