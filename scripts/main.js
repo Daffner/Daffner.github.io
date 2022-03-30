@@ -10,7 +10,8 @@ let data = imgData.data;
 let red = 0;
 let green = 0;
 let blue = 0;
-let coords = [][]
+//2d array
+let coords = []
 let count = 0;
 for (let i = 0; i < data.length; i+=4){
   red = data[i];
