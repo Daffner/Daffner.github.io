@@ -20,6 +20,10 @@ for (let i = 0; i < data.length; i+=4){
   if (red === green && green === blue && red === 255) {
     //this is a clickable area
     coords[count] = [(i/4)%can.width,(i/4)/can.width]; 
+    count++;
   }
 }
-alert(coords[0]);
+for (let j = 0; j < coords.length; j++) {
+  let but = document.createElement("BUTTON");
+  but.setAttribute("style","z-index:2; position:absolute; top:"+coords[j][0]+"; left:"+coords[j][1]);
+}
