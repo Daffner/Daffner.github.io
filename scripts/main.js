@@ -11,7 +11,7 @@ let red = 0;
 let green = 0;
 let blue = 0;
 //2d array
-let coords = []
+var coords = []
 let count = 0;
 for (let i = 0; i < data.length; i+=4){
   red = data[i];
@@ -22,4 +22,4 @@ for (let i = 0; i < data.length; i+=4){
     coords[count] = [(i/4)%can.width,(i/4)/can.width]; 
   }
 }
-
+alert(coords[0]);
