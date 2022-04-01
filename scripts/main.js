@@ -19,7 +19,7 @@ for (let i = 0; i < data.length; i+=4){
   blue = data[i+2];
   if (red === green && green === blue && red === 255) {
     //this is a clickable area
-    coords[count] = [(i/4)%can.width,(i/4)/can.width]; 
+    coords.push([(i/4)%can.width,(i/4)/can.width]); 
     count++;
   }
 }
