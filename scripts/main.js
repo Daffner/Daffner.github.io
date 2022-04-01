@@ -23,6 +23,7 @@ for (let i = 0; i < data.length; i+=4){
     count++;
   }
 }
+alert(coords.length);
 for (let j = 0; j < coords.length; j++) {
   let but = document.createElement("BUTTON");
   but.setAttribute("style","z-index:2; position:absolute; top:"+coords[j][0]+"; left:"+coords[j][1]);
