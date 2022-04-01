@@ -17,14 +17,14 @@ let count = 0;
   red = data[i];
   green = data[i+1];
   blue = data[i+2];
-  //console.log(red + ", " + green + ", "+ blue + "\n");
+  console.log(red + ", " + green + ", "+ blue + "\n");
   if (red === green && green === blue && red === 255) {
     //this is a clickable area
     coords.push([(i/4)%can.width,(i/4)/can.width]); 
     count++;
   }
 }*/
-alert(""+count);
+
 for (let j = 0; j < coords.length; j++) {
   let but = document.createElement("BUTTON");
   but.setAttribute("style","z-index:2; position:absolute; top:"+coords[j][0]+"; left:"+coords[j][1]);
