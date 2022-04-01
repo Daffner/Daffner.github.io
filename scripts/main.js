@@ -13,7 +13,7 @@ let blue = 0;
 //2d array
 var coords = []
 let count = 0;
-for (let i = 0; i < data.length; i+=4){
+/*for (let i = 0; i < data.length; i+=4){
   red = data[i];
   green = data[i+1];
   blue = data[i+2];
@@ -23,7 +23,7 @@ for (let i = 0; i < data.length; i+=4){
     coords.push([(i/4)%can.width,(i/4)/can.width]); 
     count++;
   }
-}
+}*/
 alert(""+count);
 for (let j = 0; j < coords.length; j++) {
   let but = document.createElement("BUTTON");
