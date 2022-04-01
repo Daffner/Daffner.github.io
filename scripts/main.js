@@ -17,7 +17,7 @@ for (let i = 0; i < data.length; i+=4){
   red = data[i];
   green = data[i+1];
   blue = data[i+2];
-  console.log(red + ", " + green + ", "+ blue + "\n");
+  //console.log(red + ", " + green + ", "+ blue + "\n");
   if (red === green && green === blue && red === 255) {
     //this is a clickable area
     coords.push([(i/4)%can.width,(i/4)/can.width]); 
