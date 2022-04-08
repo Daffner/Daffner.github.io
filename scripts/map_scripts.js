@@ -141,7 +141,7 @@ function init() {
   const marker_user = new google.maps.Marker({
     position: initialPosition,
     map: map,
-    icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/info-i_maps.png",
+    icon: "../assets/YOUAREHERESTAR.png",
   });
 
 
