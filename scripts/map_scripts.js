@@ -54,6 +54,13 @@ const getPositionErrorMessage = (code) => {
       return "Timeout reached.";
   }
 };
+const icon = {
+    url: "../assets/userlocation.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+
 
 const points = [
   {
@@ -141,7 +148,7 @@ function init() {
   const marker_user = new google.maps.Marker({
     position: initialPosition,
     map: map,
-    icon: "../assets/userlocation.png",
+    icon: icon,
   });
 
 
