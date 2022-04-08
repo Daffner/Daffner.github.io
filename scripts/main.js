@@ -18,10 +18,11 @@ for (let i = 0; i < data.length; i+=4){
   green = data[i+1];
   blue = data[i+2];
   //console.log(red + ", " + green + ", "+ blue + "\n");
-  if (red === green && green === blue && red === 255) {
+  if (red >= 240 && green >= 240 && blue >= 240) {
     //this is a clickable area
     coords.push([(i/4)%can.width,(i/4)/can.width]); 
     count++;
+    //if this works we should have the issue of too many buttons on a point
   }
 }
 
