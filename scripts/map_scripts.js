@@ -34,7 +34,7 @@ const trackLocation = ({ onSuccess, onError = () => {} }) => {
 
   return navigator.geolocation.watchPosition(onSuccess, onError, {
     enableHighAccuracy: true,
-    timeout: 5000,
+    timeout: 100,
     maximumAge: 0,
   });
 };
@@ -57,7 +57,7 @@ const getPositionErrorMessage = (code) => {
 
 const points = [
   {
-    name: "Haines",
+    name: "20C1",
     latitude: 42.459196,
     longitude: -71.355369,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. ",
@@ -65,12 +65,68 @@ const points = [
     visitedBool: false,
   },
   {
-    name: "Chapel",
+    name: "20C2",
     latitude: 42.460114,
     longitude: -71.355781,
     text: "Chapel do be a good chapel.",
     image: "assets/20c1_test.png",
     visitedBool: false,
+  },
+  {
+    name: "20C3",
+    latitude: 42.460438,
+    longitude: -71.355981,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  },
+  {
+    name: "20C4",
+    latitude: 42.460285,
+    longitude: -71.355225,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  }, 
+  {
+    name: "20C5",
+    latitude: 42.459935,
+    longitude: -71.354766,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  },
+  {
+    name: "20C6",
+    latitude: 42.460177,
+    longitude: -71.353903,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  },
+  {
+    name: "20C7",
+    latitude: 42.459497,
+    longitude: -71.353718,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  },
+  {
+    name: "20C8",
+    latitude: 42.459447,
+    longitude: -71.354815,
+    text: "script",
+    image: "assets/20c1_test.png",
+    "visitedBool": false
+  },
+  {
+    name: "20C9",
+    latitude: 42.459499,
+    longitude: -71.356065,
+    text: "script",
+    image: "assets/20c1_test.png",
+    visitedBool: false
   }
 
 ];
