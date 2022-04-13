@@ -151,7 +151,7 @@ function init() {
     map: map,
     icon: {
     url: "../assets/userlocation.png", // url
-    scaledSize: new google.maps.Size(20, 20), // scaled size
+    scaledSize: new google.maps.Size(30, 30), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
 },
