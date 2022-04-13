@@ -206,6 +206,7 @@ function init() {
     );
 
   }
+  
 
 
   const $info = document.getElementById("info");
@@ -225,4 +226,30 @@ function init() {
       $info.classList.add("error");
     },
   });
+
+
+  var tourCoordinates = [];
+  console.log(tourCoordinates);
+
+  var len = points.length;
+  for (var i = 0; i < len; i++) {
+      tourCoordinates.push({
+          lat: points[i].latitude,
+          lng: points[i].longitude,
+      });
+  }
+
+  console.log(tourCoordinates);
+
+  const tourPath = new google.maps.Polyline({
+    path: tourCoordinates,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+  tourPath.setMap(map);
+
+
+
 }
