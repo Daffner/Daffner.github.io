@@ -68,7 +68,7 @@ const points = [
     name: "20C1",
     latitude: 42.459196,
     longitude: -71.355369,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ullamcorper nunc. ",
+    text: "This point talks about Haines house's role in CA's early life. It also talks about some other aspects of CA's early life. ",//no more than 344 chars preferably
     image: "assets/20c1_test.png",
     visitedBool: false,
   },
@@ -76,7 +76,7 @@ const points = [
     name: "20C2",
     latitude: 42.460114,
     longitude: -71.355781,
-    text: "Chapel do be a good chapel.",
+    text: "This point talks about how the chapel was integrated into CA (fire safety protocol). ",
     image: "assets/20c1_test.png",
     visitedBool: false,
   },
@@ -84,7 +84,7 @@ const points = [
     name: "20C3",
     latitude: 42.460438,
     longitude: -71.355981,
-    text: "script",
+    text: "This point talks about the bit of wood that CA students carved words onto in the chapel.",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -92,7 +92,7 @@ const points = [
     name: "20C4",
     latitude: 42.460285,
     longitude: -71.355225,
-    text: "script",
+    text: "This point talks about the life of the stufac, and how it wasn't always a dining area.",
     image: "assets/20c1_test.png",
     visitedBool: false
   }, 
@@ -100,7 +100,7 @@ const points = [
     name: "20C5",
     latitude: 42.459935,
     longitude: -71.354766,
-    text: "script",
+    text: "This point talks about how CA becoming co-ed is important.",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -108,7 +108,7 @@ const points = [
     name: "20C6",
     latitude: 42.460177,
     longitude: -71.353903,
-    text: "script",
+    text: "This point talks about social justice in CA. ",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -116,7 +116,7 @@ const points = [
     name: "20C7",
     latitude: 42.459497,
     longitude: -71.353718,
-    text: "script",
+    text: "This point talks about the senoir house, which is now bradford (however, we all understand wheeler is the best house).",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -124,7 +124,7 @@ const points = [
     name: "20C8",
     latitude: 42.459447,
     longitude: -71.354815,
-    text: "script",
+    text: "This point is in some schrodinger state regarding what it's talking about.",
     image: "assets/20c1_test.png",
     "visitedBool": false
   },
@@ -132,7 +132,7 @@ const points = [
     name: "20C9",
     latitude: 42.459499,
     longitude: -71.356065,
-    text: "script",
+    text: "This point gives a recap of this tour.",
     image: "assets/20c1_test.png",
     visitedBool: false
   }
@@ -214,7 +214,7 @@ function init() {
   let watchId = trackLocation({
     onSuccess: ({ coords: { latitude: lat, longitude: lng } }) => {
       marker_user.setPosition({ lat, lng });
-      map.panTo({ lat, lng });
+      //map.panTo({ lat, lng });
       $info.textContent = `Lat: ${lat.toFixed(5)} Lng: ${lng.toFixed(5)}`;
       $info.classList.remove("error");
     },
