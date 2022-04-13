@@ -244,7 +244,7 @@ function init() {
   const tourPath = new google.maps.Polyline({
     path: tourCoordinates,
     geodesic: true,
-    strokeColor: "#FF0000",
+    strokeColor: "#FFBB00",
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
