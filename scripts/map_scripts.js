@@ -54,13 +54,14 @@ const getPositionErrorMessage = (code) => {
       return "Timeout reached.";
   }
 };
+/*
 const icon = {
     url: "../assets/userlocation.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
 };
-
+*/
 
 const points = [
   {
@@ -176,7 +177,7 @@ function init() {
   var infoWindow = new google.maps.InfoWindow();
   
   var marker_temp, i;
-  console.log(points[0].name);
+  //console.log(points[0].name);
 
   for (i = 0; i < points.length; i++) {
     marker_temp = new google.maps.Marker({
