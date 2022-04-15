@@ -189,10 +189,13 @@ function init() {
           //infowindow.setContent(points[i].name);
           var infoWindowNode = document.createElement('div');            
           var node        = document.createElement('div');
+          var image = document.createElement('img');
           var textNode = document.createElement('h3');
           textNode.innerHTML = points[i].name;
           node.innerHTML = points[i].text;
+          image.setAttribute("src","../assets/userlocation.png");
           infoWindowNode.appendChild(textNode);
+          infoWindowNode.appendChild(image);
           infoWindowNode.appendChild(node);
           infoWindow.setContent(infoWindowNode);
 
