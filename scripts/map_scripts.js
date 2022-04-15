@@ -227,7 +227,7 @@ function init() {
     },
   });
 
-
+  //made array of 20c coordinates to use for polyline
   var tourCoordinates = [];
   console.log(tourCoordinates);
 
@@ -249,7 +249,7 @@ function init() {
     strokeWeight: 2,
   });
   tourPath.setMap(map);
-
+  
 
 
 }
