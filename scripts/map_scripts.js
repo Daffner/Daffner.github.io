@@ -193,7 +193,8 @@ function init() {
           var textNode = document.createElement('h3');
           textNode.innerHTML = points[i].name;
           node.innerHTML = points[i].text;
-          image.setAttribute("src","../assets/userlocation.png");
+          image.setAttribute("src","../assets/YOUAREHERESTAR.png");
+          image.setAttribute("style","width:100px;height:100px;")
           infoWindowNode.appendChild(textNode);
           infoWindowNode.appendChild(image);
           infoWindowNode.appendChild(node);
