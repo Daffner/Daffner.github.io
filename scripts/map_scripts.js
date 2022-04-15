@@ -194,7 +194,7 @@ function init() {
           textNode.innerHTML = points[i].name;
           node.innerHTML = points[i].text;
           image.setAttribute("src","../assets/YOUAREHERESTAR.png");
-          image.setAttribute("style","width:100px;height:100px;")
+          image.setAttribute("style","width:100px;height:100px;margin-left: auto;margin-right: auto;display: block;");
           infoWindowNode.appendChild(textNode);
           infoWindowNode.appendChild(image);
           infoWindowNode.appendChild(node);
