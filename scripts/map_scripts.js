@@ -22,7 +22,6 @@ const createMap = ({ lat, lng }) => {
 const createMarker = ({ map, position }) => {
   return new google.maps.Marker({ map, position});
 };
-
 /**
  * Track the user location.
  * @param {Object} onSuccess
@@ -186,8 +185,8 @@ function init() {
       position: new google.maps.LatLng(points[i].latitude, points[i].longitude),
       map: map,
       icon: {
-              url: "../assets/newOrangePoint.png", // url
-              scaledSize: new google.maps.Size(30, 30), // scaled size
+              path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, // svg path notation hopefully
+              //scaledSize: new google.maps.Size(30, 30), // scaled size
               origin: new google.maps.Point(0,0), // origin
               anchor: new google.maps.Point(0, 0) // anchor
             },
