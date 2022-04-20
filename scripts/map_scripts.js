@@ -8,6 +8,8 @@ const createMap = ({ lat, lng }) => {
   return new google.maps.Map(document.getElementById("map"), {
     center: { lat, lng },
     zoom: 19,
+    mapTypeId: 'satellite'
+
   });
 };
 
@@ -237,19 +239,85 @@ function init() {
     },
   });
 
-  //made array of 20c coordinates to use for polyline
-  var tourCoordinates = [];
-  console.log(tourCoordinates);
+  const tourCoordinates = [
+    {
+      lat: 42.459196,
+      lng: -71.355369,
+      
+    },
+    {
+      lat: 42.459440, //backdoor of haines
+      lng: -71.355639,
+    },
+    {
+      lat:42.459527,  //point in road to chapel
+      lng: -71.355289,
 
-  var len = points.length;
-  for (var i = 0; i < len; i++) {
-      tourCoordinates.push({
-          lat: points[i].latitude,
-          lng: points[i].longitude,
-      });
-  }
+    },
+    {
+      lat: 42.460053, //point in road to chapel 2
+      lng: -71.355501,
+    },
+    {
+     
+      lat: 42.460114,
+      lng: -71.355781,
+      
+    },
+    {
+      
+      lat: 42.460438,
+      lng: -71.355981,
+      
+    },
+    {
+      lat: 42.460285,
+      lng: -71.355225,
+      
+    }, 
+    {
+      lat: 42.459935,
+      lng: -71.354766,
+      
+    },
+    {
+      lat: 42.460177,
+      lng: -71.353903,
+      
+    },
+    {
+      lat: 42.460011, 
+      lng: -71.353748,     //point in road to bradford
 
-  console.log(tourCoordinates);
+
+    },
+    {
+      lat: 42.459815, 
+      lng: -71.354051    //point in road to bradford 2
+
+
+    },
+
+
+    {
+      lat: 42.459497,
+      lng: -71.353718,
+      
+    },
+    {
+      lat: 42.459447,
+      lng: -71.354815,
+      
+    },
+    {
+      lat: 42.459499,
+      lng: -71.356065,
+      
+    }
+  
+  ];
+
+  
 
   const tourPath = new google.maps.Polyline({
     path: tourCoordinates,
