@@ -183,6 +183,12 @@ function init() {
     marker_temp = new google.maps.Marker({
       position: new google.maps.LatLng(points[i].latitude, points[i].longitude),
       map: map,
+      icon: {
+              url: "../assets/newOrangePoint.png", // url
+              scaledSize: new google.maps.Size(30, 30), // scaled size
+              origin: new google.maps.Point(0,0), // origin
+              anchor: new google.maps.Point(0, 0) // anchor
+            },
     });
     google.maps.event.addListener(marker_temp, "click", (function (marker_temp, i) {
         return function () {
