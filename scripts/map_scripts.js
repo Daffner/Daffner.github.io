@@ -151,9 +151,9 @@ function init() {
     position: initialPosition,
     map: map,
     icon: {
-    url: "../assets/userlocation.png", // url
+    url: "../assets/YOUAREHERESTAR.png", // url
     scaledSize: new google.maps.Size(30, 30), // scaled size
-    origin: new google.maps.Point(0,0), // origin
+    origin: new google.maps.Point(15,15), // origin
     anchor: new google.maps.Point(0, 0) // anchor
 },
   });
