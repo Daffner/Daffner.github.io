@@ -187,8 +187,8 @@ function init() {
       icon: {
               url: "../assets/newOrangePoint.png", // url
               scaledSize: new google.maps.Size(30, 30), // scaled size
-              origin: new google.maps.Point(15,30), // origin
-              anchor: new google.maps.Point(0, 0) // anchor
+              origin: new google.maps.Point(0,0), // origin
+              anchor: new google.maps.Point(15, 30) // anchor
             },
     });
     google.maps.event.addListener(marker_temp, "click", (function (marker_temp, i) {
