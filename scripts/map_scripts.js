@@ -154,7 +154,7 @@ function init() {
       url: "../assets/YOUAREHERESTAR.png", // url
       scaledSize: new google.maps.Size(30, 30), // scaled size
       origin: new google.maps.Point(0,0), // origin
-      anchor: new google.maps.Point(50,80) // anchor
+      anchor: new google.maps.Point(15,30) // anchor
     }
   });
 
@@ -297,13 +297,13 @@ function init() {
 
     },
 
-
+/*
     {
       lat: 42.459497,
       lng: -71.353718,
       
     },
-    /*{
+    {
       lat:42.459565, 
       lng:-71.354002,
     },
