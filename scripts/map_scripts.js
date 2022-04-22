@@ -7,7 +7,7 @@
 const createMap = ({ lat, lng }) => {
   return new google.maps.Map(document.getElementById("map"), {
     center: { lat, lng },
-    zoom: 19,
+    zoom: 17,
     mapTypeId: 'satellite'
 
   });
