@@ -77,7 +77,7 @@ const points = [
     name: "20C2",
     latitude: 42.460114,
     longitude: -71.355781,
-    text: "This point talks about how the chapel was integrated into CA (fire safety protocol). ",
+    text: "This point talks about how the chapel was integrated into CA. ",
     image: "assets/20c1_test.png",
     visitedBool: false,
   },
@@ -101,7 +101,7 @@ const points = [
     name: "20C5",
     latitude: 42.459935,
     longitude: -71.354766,
-    text: "This point talks about how CA becoming co-ed is important.",
+    text: "This point talks about how CA becoming co-ed.",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -117,7 +117,7 @@ const points = [
     name: "20C7",
     latitude: 42.459497,
     longitude: -71.353718,
-    text: "This point talks about the senoir house, which is now bradford (however, we all understand wheeler is the best house).",
+    text: "This point talks about what used to be the senior house, Bradford.",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -125,7 +125,7 @@ const points = [
     name: "20C8",
     latitude: 42.459447,
     longitude: -71.354815,
-    text: "This point is in some schrodinger state regarding what it's talking about.",
+    text: "This point is in some schrodinger state regarding what it's talking about(work in progress).",
     image: "assets/20c1_test.png",
     "visitedBool": false
   },
