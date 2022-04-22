@@ -78,7 +78,7 @@ const points = [
     latitude: 42.460114,
     longitude: -71.355781,
     text: "The Chapel is the heart of today’s CA. Nevertheless, it arrived at the school in a rather serendipitous manner. The story starts with the infamous 1942 Cocoanut Grove fire in Boston which claimed the lives of nearly 500 people...",
-    image: "assets/20c1_test.png",
+    image: "assets/20C2_chapel.jpg",
     visitedBool: false,
   },
   {
@@ -86,7 +86,7 @@ const points = [
     latitude: 42.460438,
     longitude: -71.355981,
     text: "An iconic part of the chapel is this carved inscription: Paul's first letter to the Corinthians. This passage was traditionally read on the opening days of school...",
-    image: "assets/20c1_test.png",
+    image: "assets/20C3_podium.jpeg",
     visitedBool: false
   },
   {
@@ -94,7 +94,7 @@ const points = [
     latitude: 42.460285,
     longitude: -71.355225,
     text: "Mrs. Hall's changes to CA campus were not limited to building the Chapel. During her tenure, the Stufac was also transformed...",
-    image: "assets/20c1_test.png",
+    image: "assets/20C4_stu.JPG",
     visitedBool: false
   }, 
   {
@@ -102,7 +102,7 @@ const points = [
     latitude: 42.459935,
     longitude: -71.354766,
     text: "As it reached its fiftieth year, CA faced an existential crisis. If things had gone differently, it's entirely possible that the school would not exist today, that the houses along Main Street would be just that, residential houses, and it would have looked as though CA was never here...",
-    image: "assets/20c1_test.png",
+    image: "assets/20C5_lib.JPG",
     visitedBool: false
   },
   {
@@ -110,7 +110,7 @@ const points = [
     latitude: 42.460177,
     longitude: -71.353903,
     text: "Along with co-education, CA experienced some of the social revolution that was rocking the world. Before becoming co-educational, CA had accepted its first students of color in 1963... ",
-    image: "assets/20c1_test.png",
+    image: "assets/20C6_shac.jpg",
     visitedBool: false
   },
   {
@@ -118,7 +118,7 @@ const points = [
     latitude: 42.459497,
     longitude: -71.353718,
     text: " This is the site of one of the two original senior houses, one of the first, but failed attempts, at developing co-educational residences at Concord Academy. Ben Stumpf, now the computer science teacher at CA, lived in this Senior house while he was a student here...",
-    image: "assets/20c1_test.png",
+    image: "assets/20C7_badford.jpg",
     visitedBool: false
   },
  /* {
