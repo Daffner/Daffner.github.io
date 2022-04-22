@@ -69,7 +69,7 @@ const points = [
     name: "20C1",
     latitude: 42.459196,
     longitude: -71.355369,
-    text: "This point talks about Haines house's role in CA's early life. It also talks about some other aspects of CA's early life. ",//no more than 344 chars preferably
+    text: "Welcome to Haines House! It was here that the Concord Academy that we know today got its start in 1922...",//no more than 344 chars preferably
     image: "assets/20c1_test.png",
     visitedBool: false,
   },
@@ -77,7 +77,7 @@ const points = [
     name: "20C2",
     latitude: 42.460114,
     longitude: -71.355781,
-    text: "This point talks about how the chapel was integrated into CA. ",
+    text: "The Chapel is the heart of today’s CA. Nevertheless, it arrived at the school in a rather serendipitous manner. The story starts with the infamous 1942 Cocoanut Grove fire in Boston which claimed the lives of nearly 500 people...",
     image: "assets/20c1_test.png",
     visitedBool: false,
   },
@@ -85,7 +85,7 @@ const points = [
     name: "20C3",
     latitude: 42.460438,
     longitude: -71.355981,
-    text: "This point talks about the bit of wood that CA students carved words onto in the chapel.",
+    text: "An iconic part of the chapel is this carved inscription: Paul's first letter to the Corinthians. This passage was traditionally read on the opening days of school...",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -93,7 +93,7 @@ const points = [
     name: "20C4",
     latitude: 42.460285,
     longitude: -71.355225,
-    text: "This point talks about the life of the stufac, and how it wasn't always a dining area.",
+    text: "Mrs. Hall's changes to CA campus were not limited to building the Chapel. During her tenure, the Stufac was also transformed...",
     image: "assets/20c1_test.png",
     visitedBool: false
   }, 
@@ -101,7 +101,7 @@ const points = [
     name: "20C5",
     latitude: 42.459935,
     longitude: -71.354766,
-    text: "This point talks about how CA becoming co-ed.",
+    text: "As it reached its fiftieth year, CA faced an existential crisis. If things had gone differently, it's entirely possible that the school would not exist today, that the houses along Main Street would be just that, residential houses, and it would have looked as though CA was never here...",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -109,7 +109,7 @@ const points = [
     name: "20C6",
     latitude: 42.460177,
     longitude: -71.353903,
-    text: "This point talks about social justice in CA. ",
+    text: "Along with co-education, CA experienced some of the social revolution that was rocking the world. Before becoming co-educational, CA had accepted its first students of color in 1963... ",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
@@ -117,7 +117,7 @@ const points = [
     name: "20C7",
     latitude: 42.459497,
     longitude: -71.353718,
-    text: "This point talks about what used to be the senior house, Bradford.",
+    text: " This is the site of one of the two original senior houses, one of the first, but failed attempts, at developing co-educational residences at Concord Academy. Ben Stumpf, now the computer science teacher at CA, lived in this Senior house while he was a student here...",
     image: "assets/20c1_test.png",
     visitedBool: false
   },
