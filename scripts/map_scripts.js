@@ -121,7 +121,7 @@ const points = [
     image: "assets/20c1_test.png",
     visitedBool: false
   },
-  {
+ /* {
     name: "20C8",
     latitude: 42.459447,
     longitude: -71.354815,
@@ -136,7 +136,7 @@ const points = [
     text: "This point gives a recap of this tour.",
     image: "assets/20c1_test.png",
     visitedBool: false
-  }
+  }*/
 
 ];
 
@@ -150,7 +150,12 @@ function init() {
   const marker_user = new google.maps.Marker({
     position: initialPosition,
     map: map,
-    
+    icon: {
+      url: "../assets/YOUAREHERESTAR.png", // url
+      scaledSize: new google.maps.Size(30, 30), // scaled size
+      origin: new google.maps.Point(0,0), // origin
+      anchor: new google.maps.Point(50,80) // anchor
+    }
   });
 
 
@@ -297,7 +302,7 @@ function init() {
       lat: 42.459497,
       lng: -71.353718,
       
-    },
+    },/*
     {
       lat: 42.459447,
       lng: -71.354815,
@@ -307,7 +312,7 @@ function init() {
       lat: 42.459499,
       lng: -71.356065,
       
-    }
+    }*/
   
   ];
 
