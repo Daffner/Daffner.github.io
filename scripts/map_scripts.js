@@ -70,7 +70,7 @@ const points = [
     latitude: 42.459196,
     longitude: -71.355369,
     text: "Welcome to Haines House! It was here that the Concord Academy that we know today got its start in 1922...",//no more than 344 chars preferably
-    image: "assets/20c1_haines.png",
+    image: "assets/20C1_haines.jpg",
     visitedBool: false,
   },
   {
