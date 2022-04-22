@@ -7,8 +7,8 @@
 const createMap = ({ lat, lng }) => {
   return new google.maps.Map(document.getElementById("map"), {
     center: { lat, lng },
-    zoom: 17,
-    mapTypeId: 'satellite'
+    zoom: 18,
+    mapTypeId: 'map'
 
   });
 };
@@ -244,10 +244,7 @@ function init() {
       lng: -71.355369,
       
     },
-    {
-      lat: 42.459440, //backdoor of haines
-      lng: -71.355639,
-    },
+    
     {
       lat:42.459527,  //point in road to chapel
       lng: -71.355289,
