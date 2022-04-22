@@ -150,12 +150,12 @@ function init() {
   const marker_user = new google.maps.Marker({
     position: initialPosition,
     map: map,
-    icon: {
+    /*icon: {
     url: "../assets/YOUAREHERESTAR.png", // url
     scaledSize: new google.maps.Size(30, 30), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(15, 15) // anchor
-},
+},*/
   });
 
 
