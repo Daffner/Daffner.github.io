@@ -214,6 +214,7 @@ function init() {
           infoWindowNode.appendChild(textNode);
           infoWindowNode.appendChild(image);
           infoWindowNode.appendChild(node);
+          infoWindowNode.appendChild(map);
           infoWindow.setContent(infoWindowNode);
 
 
