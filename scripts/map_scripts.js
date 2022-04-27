@@ -63,7 +63,8 @@ const icon = {
     anchor: new google.maps.Point(0, 0) // anchor
 };
 */
-
+const markerSize = 30;
+const imgSize = 100;
 const points = [
   {
     name: "20C1",
@@ -152,9 +153,9 @@ function init() {
     map: map,
     icon: {
       url: "../assets/YOUAREHERESTAR.png", // url
-      scaledSize: new google.maps.Size(30, 30), // scaled size
+      scaledSize: new google.maps.Size(markerSize, markerSize), // scaled size
       origin: new google.maps.Point(0,0), // origin
-      anchor: new google.maps.Point(15,30) // anchor
+      anchor: new google.maps.Point((markerSize/2),(markerSize/2)) // anchor
     }
   });
 
@@ -186,9 +187,9 @@ function init() {
       map: map,
       icon: {
               url: "../assets/newOrangePoint.png", // url
-              scaledSize: new google.maps.Size(30, 30), // scaled size
+              scaledSize: new google.maps.Size(markerSize, markerSize), // scaled size
               origin: new google.maps.Point(0,0), // origin
-              anchor: new google.maps.Point(15, 30) // anchor
+              anchor: new google.maps.Point((markerSize/2), markerSize) // anchor
             },
     });
     google.maps.event.addListener(marker_temp, "click", (function (marker_temp, i) {
@@ -198,10 +199,17 @@ function init() {
           var node        = document.createElement('div');
           var image = document.createElement('img');
           var textNode = document.createElement('h3');
+          var map = document.createElement('map');
           textNode.innerHTML = points[i].name;
           node.innerHTML = points[i].text;
           image.setAttribute("src","../" + points[i].image);
-          image.setAttribute("style","width:100px;height:100px;margin-left: auto;margin-right: auto;display: block;");
+          image.setAttribute("style","width:"+imgSize+"px;height:"+imgSize+"px;margin-left: auto;margin-right: auto;display: block;");
+          map.setAttribute("name","map"+i);
+          map.areas[0] = document.createElement('area');
+          map.areas[0].setAttribute("shape","rect");
+          map.areas[0].setAttribute("coords","0,0"+imgSize+","+imgSize);
+          map.areas[0].setAttribute("href","../points/Early1.html");
+          image.setAttribute("usemap","#map"+i);
           infoWindowNode.appendChild(textNode);
           infoWindowNode.appendChild(image);
           infoWindowNode.appendChild(node);
