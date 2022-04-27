@@ -205,10 +205,11 @@ function init() {
           image.setAttribute("src","../" + points[i].image);
           image.setAttribute("style","width:"+imgSize+"px;height:"+imgSize+"px;margin-left: auto;margin-right: auto;display: block;");
           map.setAttribute("name","map"+i);
-          map.areas[0] = document.createElement('area');
-          map.areas[0].setAttribute("shape","rect");
-          map.areas[0].setAttribute("coords","0,0"+imgSize+","+imgSize);
-          map.areas[0].setAttribute("href","../points/Early1.html");
+          var area = document.createElement('area');
+          area.setAttribute("shape","rect");
+          area.setAttribute("coords","0,0"+imgSize+","+imgSize);
+          area.setAttribute("href","../points/Early1.html");
+          map.appendChild(area);
           image.setAttribute("usemap","#map"+i);
           infoWindowNode.appendChild(textNode);
           infoWindowNode.appendChild(image);
