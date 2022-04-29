@@ -208,7 +208,8 @@ function init() {
           var area = document.createElement('area');
           area.setAttribute("shape","rect");
           area.setAttribute("coords","0,0,"+imgSize+","+imgSize);
-          area.setAttribute("href","../points/Early1.html");
+          area.setAttribute("href","#");
+          area.setAttribute("onclick","load20C("+i+")");
           map.appendChild(area);
           image.setAttribute("usemap","#map"+i);
           infoWindowNode.appendChild(textNode);
