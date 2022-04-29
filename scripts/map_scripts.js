@@ -348,7 +348,7 @@ function init() {
             
              ];
 
-function load20C(var i) {
+function load20C(i) {
   location.href = "Early1.html";
   var div = document.createElement('div');
   var text = document.createElement('p');
