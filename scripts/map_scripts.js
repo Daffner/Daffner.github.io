@@ -209,7 +209,7 @@ function init() {
           area.setAttribute("shape","rect");
           area.setAttribute("coords","0,0,"+imgSize+","+imgSize);
           area.setAttribute("href","#");
-          area.setAttribute("onclick","load20C("+i+")");
+          area.setAttribute("onclick","load20C(\'"+i+"\')");
           map.appendChild(area);
           image.setAttribute("usemap","#map"+i);
           infoWindowNode.appendChild(textNode);
@@ -365,7 +365,7 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
 function load20C(i) {
   location.href = "../points/Early1.html";
   var div = document.createElement('div');
-  var text = document.querySelector("p1");
+  var text = document.createElement("p");
   console.log(i);
   text.innerHTML = texts[i];
   div.appendChild(text);
