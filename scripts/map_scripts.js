@@ -366,6 +366,7 @@ function load20C(i) {
   location.href = "../points/Early1.html";
   var div = document.createElement('div');
   var text = document.querySelector("p1");
+  console.log(i);
   text.innerHTML = texts[i];
   div.appendChild(text);
 }
