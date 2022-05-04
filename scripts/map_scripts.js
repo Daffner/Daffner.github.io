@@ -365,7 +365,7 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
 function load20C(i) {
   location.href = "../points/Early1.html";
   var div = document.createElement('div');
-  var text = document.createElement('p');
+  var text = document.querySelector("p1");
   text.innerHTML = texts[i];
   div.appendChild(text);
 }
