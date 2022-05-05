@@ -364,14 +364,13 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
 
 function load20C(i) {
   location.href = "../points/Early1.html";
-document.onreadystatechange = function () {
-  if (document.readystate === "complete") {
-    var text = document.createElement('p');
+  window.setTimeout(theRest('i'),1000);
+}
+//ideally this could be done with some sort of onload function
+function theRest(i){
+ var text = document.createElement('p');
     var div = document.createElement('div');
     console.log(i);
     text.innerHTML = texts[i];
-    div.appendChild(text);
-  }
-};
-  
+    div.appendChild(text); 
 }
