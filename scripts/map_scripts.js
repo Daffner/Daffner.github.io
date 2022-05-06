@@ -362,10 +362,12 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
             
              ];
 
-function load20C(i) {
+functiodocument.cookie = "username=John Doe";n load20C(i) {
+  document.cookie = "lastClick="+i;
   location.href = "../points/Early1.html";
+  /*
   window.setTimeout(theRest(i),1000);
-  
+  */
 }
 //ideally this could be done with some sort of onload function
 function theRest(i){
