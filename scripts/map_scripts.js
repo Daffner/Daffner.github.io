@@ -362,7 +362,7 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
             
              ];
 
-functiodocument.cookie = "username=John Doe";n load20C(i) {
+function load20C(i) {
   document.cookie = "lastClick="+i;
   location.href = "../points/Early1.html";
   /*
