@@ -23,9 +23,9 @@
              ];
 		var div = document.getElementById('placeholder');
 		let i = document.cookie.substr(10);
-		var text = document.createTextNode("Transcript:"+texts[i]);
+		var text = document.createTextNode("Transcript: "+texts[i]);
 		var title = document.querySelector('title');
-		title.innerHTML = "Point" + i;
+		title.innerHTML = "Point " + i;
 		div.appendChild(text);
 		console.log(document.cookie);
 		console.log(i);
