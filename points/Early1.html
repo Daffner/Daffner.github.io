@@ -21,10 +21,11 @@
             
              ];
 		var div = document.getElementById('placeholder');
-		let i = document.cookie.substr(11);
+		let i = document.cookie.substr(10);
 		var text = document.createTextNode(texts[i]);
 		div.appendChild(text);
-		console.log(i)
+		console.log(document.cookie);
+		console.log(i);
 		console.log(texts[i]);
 		
 		
