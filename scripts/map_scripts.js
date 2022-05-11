@@ -237,17 +237,31 @@ function init() {
     onSuccess: ({ coords: { latitude: lat, longitude: lng } }) => {
       marker_user.setPosition({ lat, lng });
       //map.panTo({ lat, lng });
-      $info.textContent = `Lat: ${lat.toFixed(5)} Lng: ${lng.toFixed(5)}`;
       $info.classList.remove("error");
+      check_if_nearby_point_is_visited
     },
     onError: (err) => {
       console.log($info);
-      $info.textContent = `Error: ${
-        err.message || getPositionErrorMessage(err.code)
-      }`;
       $info.classList.add("error");
     },
   });
+
+  function check_if_nearby_point_is_visited(){
+    for(i=0; i<points.length; i++){
+      marker_thing = new google.maps.LatLng(points[i].latitude, points[i].longitude);
+
+      var distanceInMeters = google.maps.geometry.spherical.computeDistanceBetween(
+        marker_user.getPosition(),
+        marker_thing
+      );
+      console.log(distanceInMeters);
+
+      if(distanceInMeters==2000){
+        alert("Hello! I am point"+" "+ (i+1));
+      }
+s
+    }
+  }
 
   const tourCoordinates = [
     {
@@ -363,6 +377,7 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
              ];
 
 function load20C(i) {
+<<<<<<< Updated upstream
   document.cookie = "lastClick="+i;
   location.href = "../points/Early1.html";
   /*
@@ -376,4 +391,24 @@ function theRest(i){
     console.log(i);
     text.innerHTML = texts[i];
     div.appendChild(text); 
+=======
+  console.log("hello?");
+
+
+  location.href = "../points/Early1.html";
+
+
+
+  console.log(i);
+
+  //window.setTimeout(theRest(i),1000);
+  var text = document.createElement('p');
+  var div = document.createElement('div');
+  text.innerHTML = texts[i];
+  div.appendChild(text); ;
+>>>>>>> Stashed changes
 }
+
+
+
+
