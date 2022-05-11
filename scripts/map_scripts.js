@@ -237,6 +237,8 @@ function init() {
     onSuccess: ({ coords: { latitude: lat, longitude: lng } }) => {
       marker_user.setPosition({ lat, lng });
       //map.panTo({ lat, lng });
+      document.cookie = "x="+lat;
+      document.cookie = "y="+lng;
       $info.textContent = `Lat: ${lat.toFixed(5)} Lng: ${lng.toFixed(5)}`;
       $info.classList.remove("error");
     },
