@@ -359,12 +359,12 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
              "This is the site of one of the two original senior houses, one of the first, but failed attempts, at developing co-educational residences at Concord Academy. Ben Stumpf, now the computer science teacher at CA, lived in this Senior house while he was a student here. Today, CA residential life is grappling not just with how to best co-educate the houses, but how to accommodate and welcome boarding students who are trans or gender non-conforming into a boarding program that has traditionally conformed to the gender binary. The process has prompted the community to scrutinize the way that gender informs and shapes how we create and use social spaces on campus and come to new and more flexible approaches that fit the community that we are today and that affirm all of the students who call CA home.",
              "nothing",
              "Concord Academy\'s transition from a local elementary school, to a local girls' high school, to a national girls\' boarding school, to an international boarding and day school is the result of the love and commitment of its students, families, faculty, staff, and school leaders. Its footprint has expanded over time from its origins at 185 Main Street to stretch from the border of downtown at Wheeler House to the shore of the Sudbury River at Toad Hall, and the Moriarty Athletic Campus out at the old Arena Farms. The school continues to reimagine and reinvent itself with each new generation of students and adults. The immediate future will hopefully include a revitalization of West Campus and the building of the new Arts Building on the parking lot you see in front of you. It will be exciting to see how the next generation of Chameleons transforms this landscape and themselves."
-            
+
              ];
 
 function load20C(i) {
   document.cookie = "lastClick="+i;
-  location.href = "../points/Early1.html";
+  location.href = "../points/PointMoreInfo.html";
   /*
   window.setTimeout(theRest(i),1000);
   */
