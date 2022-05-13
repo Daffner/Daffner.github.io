@@ -177,7 +177,7 @@ function init() {
     '</div>' +
     '</div>';*/
   var infoWindow = new google.maps.InfoWindow();
-  
+  var markers = [];
   var marker_temp, i;
   //console.log(points[0].name);
 
@@ -217,7 +217,7 @@ function init() {
           infoWindowNode.appendChild(node);
           infoWindowNode.appendChild(map);
           infoWindow.setContent(infoWindowNode);
-
+          
 
 
 
@@ -226,7 +226,7 @@ function init() {
         };
       })(marker_temp, i)
     );
-
+    markers.push(marker_temp);
   }
   
 
@@ -239,6 +239,21 @@ function init() {
       //map.panTo({ lat, lng });
       document.cookie = "x="+lat;
       document.cookie = "y="+lng;
+      
+       for (let p = 0; p < points.length; p++) {
+        x = points[p].latitude;
+        y = points[p].longitude;
+        if (!Math.abs(x-getCookie('x'))<=.000002) {
+          continue;
+        }
+        if (!Math.abs(y-getCookie('y'))<=.000002) {
+          continue
+        } else {
+         //do something with p, markers[p]
+          break;
+        }
+      }
+      
       $info.textContent = `Lat: ${lat.toFixed(5)} Lng: ${lng.toFixed(5)}`;
       $info.classList.remove("error");
     },
