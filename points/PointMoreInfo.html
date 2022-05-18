@@ -15,12 +15,89 @@
 		<h1 id="point_name" >
 
 		</h1>
+		<img id = "point_img" src = "" alt = "bruh">
+		
 		<div id="main_content" >
-
+			
 		</div>
 		
 	</div>
 	<script>
+		const points = [
+  {
+    name: "20C1",
+    latitude: 42.459196,
+    longitude: -71.355369,
+    text: "Welcome to Haines House! It was here that the Concord Academy that we know today got its start in 1922...",//no more than 344 chars preferably
+    image: "assets/20C1_haines.png",
+    visitedBool: false,
+  },
+  {
+    name: "20C2",
+    latitude: 42.460114,
+    longitude: -71.355781,
+    text: "The Chapel is the heart of today’s CA. Nevertheless, it arrived at the school in a rather serendipitous manner. The story starts with the infamous 1942 Cocoanut Grove fire in Boston which claimed the lives of nearly 500 people...",
+    image: "assets/20C2_chapel.jpg",
+    visitedBool: false,
+  },
+  {
+    name: "20C3",
+    latitude: 42.460438,
+    longitude: -71.355981,
+    text: "An iconic part of the chapel is this carved inscription: Paul's first letter to the Corinthians. This passage was traditionally read on the opening days of school...",
+    image: "assets/20C3_podium.jpeg",
+    visitedBool: false
+  },
+  {
+    name: "20C4",
+    latitude: 42.460285,
+    longitude: -71.355225,
+    text: "Mrs. Hall's changes to CA campus were not limited to building the Chapel. During her tenure, the Stufac was also transformed...",
+    image: "assets/20C4_stu.JPG",
+    visitedBool: false
+  }, 
+  {
+    name: "20C5",
+    latitude: 42.459935,
+    longitude: -71.354766,
+    text: "As it reached its fiftieth year, CA faced an existential crisis. If things had gone differently, it's entirely possible that the school would not exist today, that the houses along Main Street would be just that, residential houses, and it would have looked as though CA was never here...",
+    image: "assets/20C5_lib.JPG",
+    visitedBool: false
+  },
+  {
+    name: "20C6",
+    latitude: 42.460177,
+    longitude: -71.353903,
+    text: "Along with co-education, CA experienced some of the social revolution that was rocking the world. Before becoming co-educational, CA had accepted its first students of color in 1963... ",
+    image: "assets/20C6_shac.jpg",
+    visitedBool: false
+  },
+  {
+    name: "20C7",
+    latitude: 42.459497,
+    longitude: -71.353718,
+    text: " This is the site of one of the two original senior houses, one of the first, but failed attempts, at developing co-educational residences at Concord Academy. Ben Stumpf, now the computer science teacher at CA, lived in this Senior house while he was a student here...",
+    image: "assets/20C7_badford.jpg",
+    visitedBool: false
+  },
+ /* {
+    name: "20C8",
+    latitude: 42.459447,
+    longitude: -71.354815,
+    text: "This point is in some schrodinger state regarding what it's talking about(work in progress).",
+    image: "assets/20c1_test.png",
+    "visitedBool": false
+  },
+  {
+    name: "20C9",
+    latitude: 42.459499,
+    longitude: -71.356065,
+    text: "This point gives a recap of this tour.",
+    image: "assets/20c1_test.png",
+    visitedBool: false
+  }*/
+
+];
 		const texts = ["Welcome to Haines House! It was here that the Concord Academy that we know today got its start in 1922. However, Concord Academy began not as a girls\' high school in 1922, but as a co-ed elementary school around the corner on Belknap Street in 1916. Elite Concord families who hoped to have their children attend preparatory schools founded it to offer a more rigorous education than the local public elementary school provided. By 1922, students had started to age out of the school and parents wanted a local option for their daughters to continue a rigorous, if not entirely preparatory, education. While college was not a destination for all elite women at the time, it was an increasingly attractive and available option for young women who saw themselves in the \"New Woman\" movement of the 1920s. Designed primarily to serve a local student population, the fee structure used boarding tuition to subsidize day student attendance. Original day student fees ranged from $125 to $350 while boarding student tuition was $1500. Once the decision was made to open a high school on April 22nd of 1922, plans moved quickly. Haines house was bought on May 19th and Elise Hobson was hired as the new headmistress on May 27th. The high school opened in September of that year. In that first iteration, Haines House was used for classrooms, a dining hall, and teacher residences.",
              "The Chapel is the heart of today\'s CA. Nevertheless, it arrived at the school in a rather serendipitous manner. The story starts with the infamous 1942 Cocoanut Grove fire in Boston which claimed the lives of nearly 500 people. In the wake of that tragedy, more stringent fire regulations were imposed on all commercial and institutional buildings, including those at CA. To make the Assembly Hall--in what is now the lower portion of the Library--safer in the case of a fire, the local Fire Marshall insisted that the loose chairs then in use be attached to the floor. The recommended method for doing that was for the chairs to be attached to poles and the poles to be bolted to the floor. School leaders thought that would be too ugly and so they began a search for benches that could be attractively secured to the floor. CA wasn’t able to find used benches for sale in time and had to order brand new ones. But in the process of searching, a teacher came across an ad about an old Baptist church in New Hampshire that was to be sold along with its benches. Betty Hall drove up to check out the benches. What she found was something that she had been envisioning for the school for a while: a quiet meeting house. Using her own money, Hall bought the building, including its benches. Taking it apart, board by board, took three weeks, but with the help of several faculty members, one 9th grader, and 5 pet dogs, they managed (with the help of a crane) to achieve the onerous task in the summer of 1956. Since finding its place at CA, the chapel has undergone multiple renovations and additions, notable among which was the steeple, built by students during the winter of 1960-1961. The iconic bell was installed a year later. A major reconstruction was led by headmaster Jake Dresden and director of operations Don Kingman in 2004, which nearly doubled the chapel in size. When the renovation was complete, the chapel, now able to seat 420 people, had \"enhanced acoustics, improved light, a higher ceiling, and soaring beams.\"",
              "An iconic part of the chapel is this carved inscription: Paul\'s first letter to the Corinthians. This passage was traditionally read on the opening days of school. CA students carved them here in 1956. This carving is not, in fact, the first iteration. The original version turned out poorly. Molly Gregory, the woodcarving instructor, had assigned individual students their own line of the passage, resulting in visible differences between each line. Scrapping that first iteration, Gregory assigned individual students a single letter which they were responsible for carving throughout the entire piece. The result was consistency and beauty. Woodcarving students in subsequent years created many other items for the Chapel, including the altar of the chapel and this podium where CA faculty and students have been giving talks for decades. The acquisition of the Chapel and decisions about the physical plant of the school were part and parcel of the transformation that Betty Hall's leadership offered to CA. Before her tenure, CA was primarily what its founding families hoped for: a local school that would offer an intellectually stimulating education for daughters who may or may not go on to college educations. Betty Hall transformed the school into a rigorous preparatory school for girls, putting it on par with other nationally-known girls' schools and, in the process, frustrating and angering local parents whose daughters could no longer be assured of admissions. Betty Hall built the heart of the new CA, the Chapel, and put the school on the map.",
@@ -32,12 +109,16 @@
              "Concord Academy\'s transition from a local elementary school, to a local girls' high school, to a national girls\' boarding school, to an international boarding and day school is the result of the love and commitment of its students, families, faculty, staff, and school leaders. Its footprint has expanded over time from its origins at 185 Main Street to stretch from the border of downtown at Wheeler House to the shore of the Sudbury River at Toad Hall, and the Moriarty Athletic Campus out at the old Arena Farms. The school continues to reimagine and reinvent itself with each new generation of students and adults. The immediate future will hopefully include a revitalization of West Campus and the building of the new Arts Building on the parking lot you see in front of you. It will be exciting to see how the next generation of Chameleons transforms this landscape and themselves."
             
              ];
-		var main_content = document.getElementById('main_content');
+
 		
+		var main_content = document.getElementById('main_content');
+		var point_image = document.getElementById('point_img');
+
+		point_image.src = "";
 
 		let i = sessionStorage.getItem('lastClick');
 		let point_number = parseInt(i)+1;
-		var text = document.createTextNode("Transcript: "+texts[i]);
+		var text = document.createTextNode(texts[i]);
 		var title = document.querySelector('title');
 		title.innerHTML = "Point " + point_number;
 		var point_name = document.getElementById('point_name');

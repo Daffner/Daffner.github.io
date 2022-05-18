@@ -37,8 +37,8 @@ body {
 
 #main_content {
   font-size: 15px;
-  font-weight: bold;
   text-align: left;
+  margin: 10px;
 }
 
 .container {
