@@ -384,7 +384,8 @@ const texts = ["Welcome to Haines House! It was here that the Concord Academy th
              ];
 
 function load20C(i) {
-  document.cookie = "lastClick="+i;
+  //document.cookie = "lastClick="+i;
+  sessionStorage.setItem('lastClick', i);
   location.href = "../points/PointMoreInfo.html";
   /*
   window.setTimeout(theRest(i),1000);
