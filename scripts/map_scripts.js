@@ -243,7 +243,7 @@ function init() {
        for (let p = 0; p < points.length; p++) {
         x = points[p].latitude;
         y = points[p].longitude;
-        if (!Math.abs(x-sessionStorage.getItem('x'))<=.00002) {
+        if (!Math.abs(x-sessionStorage.getItem('x'))<=.000015) {
           continue;
         }
         if (!Math.abs(y-sessionStorage.getItem('y'))<=.00002) {
