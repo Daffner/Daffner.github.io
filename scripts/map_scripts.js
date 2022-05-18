@@ -237,16 +237,16 @@ function init() {
     onSuccess: ({ coords: { latitude: lat, longitude: lng } }) => {
       marker_user.setPosition({ lat, lng });
       //map.panTo({ lat, lng });
-      document.cookie = "x="+lat;
-      document.cookie = "y="+lng;
+      sessionStorage.setItem('x', lat);
+      sessionStorage.setItem('y', lng);
       
        for (let p = 0; p < points.length; p++) {
         x = points[p].latitude;
         y = points[p].longitude;
-        if (!Math.abs(x-getCookie('x'))<=.000002) {
+        if (!Math.abs(x-sessionStorage.getItem('x'))<=.000002) {
           continue;
         }
-        if (!Math.abs(y-getCookie('y'))<=.000002) {
+        if (!Math.abs(y-sessionStorage.getItem('y'))<=.000002) {
           continue
         } else {
          //do something with p, markers[p]
