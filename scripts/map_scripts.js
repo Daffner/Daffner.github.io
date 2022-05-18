@@ -250,6 +250,10 @@ function init() {
           continue
         } else {
          //do something with p, markers[p]
+         let markerTemp = markers[p];
+          markerTemp.setIcon("../assets/userlocation.png");
+          
+          
           break;
         }
       }
