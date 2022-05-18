@@ -35,7 +35,7 @@
 		var main_content = document.getElementById('main_content');
 		
 
-		let i = document.cookie.substr(10);
+		let i = sessionStorage.getItem('lastClick');
 		let point_number = parseInt(i)+1;
 		var text = document.createTextNode("Transcript: "+texts[i]);
 		var title = document.querySelector('title');
