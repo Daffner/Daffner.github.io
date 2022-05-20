@@ -4,15 +4,16 @@
 	<title>Early 1</title>
 	<link rel="stylesheet" href="../style/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/946a9a4d47.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<div>
-		<button class="button-3" role="button" onclick = redirect()>Click me to go back</button>
-
+	<div style = "margin: 10px">
+    <i class="fa-solid fa-chevron-left" onclick = redirect() style = "height:100%"></i>
 	</div>
 
 	<div id="placeholder">
-		<h1 id="point_name" >
+		<h1 id="point_name" style = "color:darkgreen" >
 
 		</h1>
 		<img id = "point_img" src = "" alt = "bruh">
@@ -29,7 +30,7 @@
     latitude: 42.459196,
     longitude: -71.355369,
     text: "Welcome to Haines House! It was here that the Concord Academy that we know today got its start in 1922...",//no more than 344 chars preferably
-    image: "assets/20C1_haines.png",
+    image: "/Users/johnoh/Documents/GitHub/Daffner.github.io/assets/20C1_haines.png",
     visitedBool: false,
   },
   {
@@ -114,9 +115,12 @@
 		var main_content = document.getElementById('main_content');
 		var point_image = document.getElementById('point_img');
 
-		point_image.src = "";
-
 		let i = sessionStorage.getItem('lastClick');
+
+    point_image.src = points[i].image;
+    console.log(points[i].image);
+
+
 		let point_number = parseInt(i)+1;
 		var text = document.createTextNode(texts[i]);
 		var title = document.querySelector('title');
