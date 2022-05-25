@@ -131,17 +131,17 @@ const points = [
     visitedBool: false,
   },
   {
-    name: "",
-    latitude: "",
-    longitude: "",
+    name: "Early9",
+    latitude: "42.459263",
+    longitude: "-71.354792",
     text: "",
     image: "",
     visitedBool: false,
   },
   {
-    name: "",
-    latitude: "",
-    longitude: "",
+    name: "Early10",
+    latitude: "42.459321",
+    longitude: "-71.353756",
     text: "",
     image: "",
     visitedBool: false,
@@ -210,6 +210,16 @@ const points = [
     image: "assets/20c1_test.png",
     "visitedBool": false
   },
+  
+  {
+    name: "",
+    latitude: "",
+    longitude: "",
+    text: "",
+    image: "",
+    visitedBool: false,
+  },
+  
   {
     name: "20C9",
     latitude: 42.459499,
