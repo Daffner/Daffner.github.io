@@ -332,7 +332,7 @@ function init() {
     let str = "../assets/newRedPoint.png";
     if (i > 9) {
       str = "../assets/newBluePoint.png";
-     if (if i > 17) {
+     if (i > 17) {
        str = "../assets/newOrangePoint.png";
      }
     }
