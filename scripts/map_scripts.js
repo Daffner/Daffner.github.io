@@ -272,11 +272,18 @@ function init() {
   //console.log(points[0].name);
 
   for (i = 0; i < points.length; i++) {
+    let str = "../assets/newRedPoint.png";
+    if (i > 9) {
+      str = "../assets/newBluePoint.png";
+     if (if i > 17) {
+       str = "../assets/newOrangePoint.png";
+     }
+    }
     marker_temp = new google.maps.Marker({
       position: new google.maps.LatLng(points[i].latitude, points[i].longitude),
       map: map,
       icon: {
-              url: "../assets/newOrangePoint.png", // url
+              url: str, // url
               scaledSize: new google.maps.Size(markerSize, markerSize), // scaled size
               origin: new google.maps.Point(0,0), // origin
               anchor: new google.maps.Point((markerSize/2), markerSize) // anchor
