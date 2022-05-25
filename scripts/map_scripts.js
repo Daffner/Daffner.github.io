@@ -93,7 +93,7 @@ const points = [
   {
     name: "Early4",
     latitude: "42.460562",
-    longitude: "-71.255570",
+    longitude: "-71.355570",
     text: "",
     image: "",
     visitedBool: false,
