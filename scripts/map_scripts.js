@@ -267,7 +267,7 @@ function init() {
     '</div>' +
     '</div>';*/
   var infoWindow = new google.maps.InfoWindow();
-  var markers = [];
+  //var markers = [];
   var marker_temp, i;
   //console.log(points[0].name);
 
@@ -316,7 +316,7 @@ function init() {
         };
       })(marker_temp, i)
     );
-    markers.push(marker_temp);
+    //markers.push(marker_temp);
   }
   
 
@@ -327,7 +327,7 @@ function init() {
     onSuccess: ({ coords: { latitude: lat, longitude: lng } }) => {
       marker_user.setPosition({ lat, lng });
       //map.panTo({ lat, lng });
-      sessionStorage.setItem('x', lat);
+     /* sessionStorage.setItem('x', lat);
       sessionStorage.setItem('y', lng);
       
        for (let p = 0; p < points.length; p++) {
@@ -347,7 +347,7 @@ function init() {
           break;
         }
       }
-      
+      */
       $info.textContent = `Lat: ${lat.toFixed(5)} Lng: ${lng.toFixed(5)}`;
       $info.classList.remove("error");
     },
