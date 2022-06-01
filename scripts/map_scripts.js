@@ -71,7 +71,7 @@ const points = [
     latitude: "42.460220",
     longitude: "-71.356202",
     text: "",
-    image: "",
+    image: "assets/early1.jpg",
     visitedBool: false,
   },
   {
@@ -79,7 +79,7 @@ const points = [
     latitude: "42.460815",
     longitude: "-71.356599",
     text: "",
-    image: "",
+    image: "assets/early2.jpg",
     visitedBool: false,
   },
   {
@@ -95,7 +95,7 @@ const points = [
     latitude: "42.46035447",
     longitude: "-71.35558412",
     text: "",
-    image: "",
+    image: "assets/early4.jpg",
     visitedBool: false,
   },
   {
@@ -103,7 +103,7 @@ const points = [
     latitude: "42.46019811",
     longitude: "-71.3547678",
     text: "",
-    image: "",
+    image: "assets/early5.JPG",
     visitedBool: false,
   },
   {
@@ -119,7 +119,7 @@ const points = [
     latitude: "42.45992578",
     longitude: "-71.35466831",
     text: "",
-    image: "",
+    image: "assets/early7.jpeg",
     visitedBool: false,
   },
   {
@@ -127,7 +127,7 @@ const points = [
     latitude: "42.459806",
     longitude: "-71.354937",
     text: "",
-    image: "",
+    image: "assets/early8.JPG",
     visitedBool: false,
   },
   {
@@ -135,7 +135,7 @@ const points = [
     latitude: "42.459263",
     longitude: "-71.354792",
     text: "",
-    image: "",
+    image: "assets/early9.jpg",
     visitedBool: false,
   },
   {
@@ -143,7 +143,7 @@ const points = [
     latitude: "42.4593332",
     longitude: "-71.35407445",
     text: "",
-    image: "",
+    image: "assets/early10.jpg",
     visitedBool: false,
   },
   {
@@ -151,7 +151,7 @@ const points = [
     latitude: "42.4591803",
     longitude: "-71.35479396",
     text: "Tourists generally do not come to Concord these days to explore its industrial history. They are more familiar with stories about its 19th century thinkers and abolitionists, Thoreau chief among them.",
-    image: "",
+    image: "assets/19CA1_(1).jpg",
     visitedBool: false,
   },
   {
@@ -159,7 +159,7 @@ const points = [
     latitude: "42.45917273",
     longitude: "-71.35520136",
     text: "While Whiting’s commitment to abolition was laudable, the majority of radical abolitionists in 19th century Concord were women.",
-    image: "",
+    image: "assets/19CA2.JPG",
     visitedBool: false,
   },
   {
@@ -167,7 +167,7 @@ const points = [
     latitude: "42.45904657",
     longitude: "-71.3566685",
     text: "Now we come to our second girlboss, Mary Merrick Brooks. Mary Merrick Brooks helped found the Concord Ladies’ Antislavery Society in 1837 and championed Garrisonian immediatism.",
-    image: "",
+    image: "assets/19CA3_(1).jpg",
     visitedBool: false,
   },
   {
@@ -175,7 +175,7 @@ const points = [
     latitude: "42.45906877",
     longitude: "-71.35603556",
     text: "Another Girlboss and member of the Concord Female Antislavery Society, was Ann Bigelow. Her story is one of generosity and moral choice. Shadrach Minkins escaped slavery in Virginia in early 1850, the year of the Fugitive Slave Act, and was living in Boston.",
-    image: "",
+    image: "assets/19CA4.jpg",
     visitedBool: false,
   },
   {
@@ -183,7 +183,7 @@ const points = [
     latitude: "42.45912899",
     longitude: "-71.35561614",
     text: "As we come to the end of our tour, we hope you were able to learn about Concord as a manufacturing town and a center of abolitionist activism in the 19th Century.",
-    image: "",
+    image: "assets/19CA5.jpeg",
     visitedBool: false,
   },
   {
@@ -191,7 +191,7 @@ const points = [
     latitude: "42.45935413",
     longitude: "-71.35326152",
     text: "Welcome to Main Street Concord! This tour will examine the manufacturing businesses that built some of these giant 19th century houses, and their relationship to the abolitionist movement.",
-    image: "",
+    image: "assets/19CM1_(1).jpg",
     visitedBool: false,
   },
   {
@@ -199,7 +199,7 @@ const points = [
     latitude: "42.45925352",
     longitude: "-71.3543158",
     text: "Across Academy Lane from William Whiting's carriage factory, was William Munroe’s pencil manufactory. Munroe received little formal schooling, and from a young age, he began work as a farm hand and a wheelwright’s assistant, but neither lasted long.",
-    image: "",
+    image: "assets/19CM2.jpg",
     visitedBool: false,
   },
   
@@ -424,7 +424,7 @@ function init() {
     },
   });
 
-  const tourCoordinates = [
+  const tourCoordinates20 = [
     {
       lat: 42.459196,
       lng: -71.355369,
@@ -485,43 +485,47 @@ function init() {
       lat: 42.459497,
       lng: -71.353718,
       
-    },/*
-    {
-      lat:42.459565, 
-      lng:-71.354002,
-    },
-    {
-      lat:42.459565, 
-      lng:-71.354002,
-    },
-    
-    
-    
-    
-    {
-      lat: 42.459447,
-      lng: -71.354815,
-      
-    },
-    {
-      lat: 42.459499,
-      lng: -71.356065,
-      
-    }*/
+    }
   
   ];
 
 
 
-  const tourPath = new google.maps.Polyline({
-    path: tourCoordinates,
+  const tourPath20 = new google.maps.Polyline({
+    path: tourCoordinates20,
     geodesic: true,
     strokeColor: "#FFBB00",
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
-  tourPath.setMap(map);
-  
+  tourPath20.setMap(map);
+
+
+  const tourCoordinates19 =[
+    {
+      
+    }
+
+
+  ]
+  const tourPath19 = new google.maps.Polyline({
+    path: tourCoordinates19,
+    geodesic: true,
+    strokeColor: "blue",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+  tourPath19.setMap(map);
+
+
+  const tourPathEarly = new google.maps.Polyline({
+    path: tourCoordinatesEarly,
+    geodesic: true,
+    strokeColor: "red",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+  tourPathEarly.setMap(map);
 
 
 }
