@@ -70,7 +70,7 @@ const points = [
     name: "Early1",
     latitude: "42.460220",
     longitude: "-71.356202",
-    text: "",
+    text: "The Laurentide Ice Sheet, which covered large parts of Canada and the US 75,000 years ago, reached New England 25,000 years ago. When the climate started warming 21,000 years ago the Laurentide ice sheet began retreating from where it had reached, almost at the end of cape cod.",
     image: "assets/early1.jpg",
     visitedBool: false,
   },
@@ -78,7 +78,7 @@ const points = [
     name: "Early2",
     latitude: "42.460815",
     longitude: "-71.356599",
-    text: "",
+    text: "The land on which you stand was, for thousands of native families, called Musketaquid, meaning \"grassy plain\" in Algonquian.",
     image: "assets/early2.jpg",
     visitedBool: false,
   },
@@ -86,7 +86,7 @@ const points = [
     name: "Early3",
     latitude: "42.460462",
     longitude: "-71.356939",
-    text: "",
+    text: "In the early 1600s, Tahattawan, the Nipmuc sachem who oversaw the area we are standing on today, was living across the Sudbury river on Nashawtuc Hill. He was old enough to have witnessed the plagues of the 1610\'s",
     image: "",
     visitedBool: false,
   },
@@ -94,7 +94,7 @@ const points = [
     name: "Early4",
     latitude: "42.46035447",
     longitude: "-71.35558412",
-    text: "",
+    text: "This is wampum. Initially, European settlers mistook wampum as a currency, likely from seeing it being used in trade.",
     image: "assets/early4.jpg",
     visitedBool: false,
   },
@@ -102,7 +102,7 @@ const points = [
     name: "Early5",
     latitude: "42.46019811",
     longitude: "-71.3547678",
-    text: "",
+    text: "In the face of English settlement and diminishing populations, many natives chose to convert to Christianity, including Tahattawan himself, a known devout Protestant. Thus came the simultaneous exclusion and isolation of what came to be known as Praying Indian towns.",
     image: "assets/early5.JPG",
     visitedBool: false,
   },
@@ -110,7 +110,7 @@ const points = [
     name: "Early6",
     latitude: "42.46008726",
     longitude: "-71.35482899",
-    text: "",
+    text: " It’s a common misconception that the English colonists immediately bulldozed the land to lay down plantations. It\'s true that beaver populations nearly went extinct after the arrival of the English.",
     image: "",
     visitedBool: false,
   },
@@ -118,7 +118,7 @@ const points = [
     name: "Early7",
     latitude: "42.45992578",
     longitude: "-71.35466831",
-    text: "",
+    text: "Simon Willard was a member of the first English families who took up permanent residence in Concord. He was a successful trader, and he learned the Algonquian language, gaining trust of many indigenous peoples.Simon Willard was a member of the first English families who took up permanent residence in Concord. He was a successful trader, and he learned the Algonquian language, gaining trust of many indigenous peoples.",
     image: "assets/early7.jpeg",
     visitedBool: false,
   },
@@ -126,7 +126,7 @@ const points = [
     name: "Early8",
     latitude: "42.459806",
     longitude: "-71.354937",
-    text: "",
+    text: "Sarah Doublet was an Indian woman and the daughter of Sagamore-John, the Chief of the Wamesit Praying Village.",
     image: "assets/early8.JPG",
     visitedBool: false,
   },
@@ -134,7 +134,7 @@ const points = [
     name: "Early9",
     latitude: "42.459263",
     longitude: "-71.354792",
-    text: "",
+    text: "Sarah Doublet became the only heir to the 500 acres of land located in Littleton, MA that was reserved for the Indian proprietors in 1714 due to the fact that she became the last survivor of  the Nashoba Plantation.",
     image: "assets/early9.jpg",
     visitedBool: false,
   },
@@ -142,7 +142,7 @@ const points = [
     name: "Early10",
     latitude: "42.4593332",
     longitude: "-71.35407445",
-    text: "",
+    text: "Elnathan Jones Jr and his wife are mentioned as \"among the leading patriots.\" of Concord, and while he was working as an East India trader, he greatly aided the cause for liberty.",
     image: "assets/early10.jpg",
     visitedBool: false,
   },
@@ -330,7 +330,7 @@ function init() {
 
   for (i = 0; i < points.length; i++) {
     let str = "../assets/newRedPoint.png";
-    if (i > 9) {
+    if (i > 8) {//missing a blue point or smth? I feel there should be a 19CM3
       str = "../assets/newBluePoint.png";
      if (i > 17) {
        str = "../assets/newOrangePoint.png";
