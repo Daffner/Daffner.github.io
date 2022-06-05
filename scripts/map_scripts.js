@@ -87,7 +87,7 @@ const points = [
     latitude: "42.460462",
     longitude: "-71.356939",
     text: "In the early 1600s, Tahattawan, the Nipmuc sachem who oversaw the area we are standing on today, was living across the Sudbury river on Nashawtuc Hill. He was old enough to have witnessed the plagues of the 1610\'s",
-    image: "testImg.png",
+    image: "assets/testImg.png",
     visitedBool: false,
   },
   {
@@ -111,7 +111,7 @@ const points = [
     latitude: "42.46008726",
     longitude: "-71.35482899",
     text: " It’s a common misconception that the English colonists immediately bulldozed the land to lay down plantations. It\'s true that beaver populations nearly went extinct after the arrival of the English.",
-    image: "testImg.png",
+    image: "assets/testImg.png",
     visitedBool: false,
   },
   {
