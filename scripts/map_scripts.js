@@ -330,9 +330,9 @@ function init() {
 
   for (i = 0; i < points.length; i++) {
     let str = "../assets/newRedPoint.png";
-    if (i > 8) {//missing a blue point or smth? I feel there should be a 19CM3
+    if (i > 9) {//missing a blue point or smth? I feel there should be a 19CM3
       str = "../assets/newBluePoint.png";
-     if (i > 17) {
+     if (i > 16) {
        str = "../assets/newOrangePoint.png";
      }
     }
