@@ -87,7 +87,7 @@ const points = [
     latitude: "42.460462",
     longitude: "-71.356939",
     text: "In the early 1600s, Tahattawan, the Nipmuc sachem who oversaw the area we are standing on today, was living across the Sudbury river on Nashawtuc Hill. He was old enough to have witnessed the plagues of the 1610\'s",
-    image: "assets/testImg.png",
+    image: "assets/TurtleStitchB.png",
     visitedBool: false,
   },
   {
